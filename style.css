@@ -64,14 +64,14 @@ body {
 }
 
 .face .eye.left {
-  background-image: url("heart.png");
+  background-image: url("./img/heart.png");
   margin-top: 50px;
   margin-left: 40px;
   animation: eyemovel infinite 2s ease-in-out;
 }
 
 .face .eye.right {
-  background-image: url("heart.png");
+  background-image: url("./img/heart.png");
   margin-top: -33px;
   margin-left: 110px;
   animation: eyemover infinite 2s ease-in-out;
