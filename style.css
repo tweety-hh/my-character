@@ -1,0 +1,111 @@
+body {
+  background: #dcc5ea;
+}
+
+.rabbit {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  margin: 200px auto;
+}
+
+.rabbit .ear {
+  position: absolute;
+  border: 2px solid #9b9b9b;
+  width: 30px;
+  height: 130px;
+  border-radius: 50% 50% 80% 80% / 35% 35% 40% 40%;
+  top: 0px;
+  background: #fff;
+}
+
+.ribbon {
+  width: 30px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.rabbit .ear.left {
+  left: 70px;
+  transform: rotate(-15deg);
+}
+
+.rabbit .ear.right {
+  right: 70px;
+  transform: rotate(20deg);
+}
+
+.rabbit .ear-pink {
+  width: 20px;
+  height: 100px;
+  position: absolute;
+  border-radius: 50% 50% 80% 80% / 35% 35% 40% 40%;
+  background: #f0d8db;
+  border: 2px solid #ce9fa6;
+  top: 15px;
+  margin-left: 5px;
+  box-sizing: border-box;
+  z-index: -1;
+}
+
+.face {
+  position: absolute;
+  border-radius: 188.5px;
+  background: #fff;
+  width: 180px;
+  height: 170px;
+  margin: 70px 60px;
+  border: 2px solid #9b9b9b;
+}
+
+.face .eye {
+  width: 35px;
+  height: 34px;
+}
+
+.face .eye.left {
+  background-image: url("heart.png");
+  margin-top: 50px;
+  margin-left: 40px;
+  animation: eyemovel infinite 2s ease-in-out;
+}
+
+.face .eye.right {
+  background-image: url("heart.png");
+  margin-top: -33px;
+  margin-left: 110px;
+  animation: eyemover infinite 2s ease-in-out;
+}
+
+.face .nose {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  border: 2px solid #9b9b9b;
+  background: #a5a5a5;
+  border-radius: 10px 10px 50px 50px;
+  left: 82px;
+}
+
+.face .mouth {
+  position: absolute;
+  width: 49px;
+  height: 31px;
+  border: 1px solid #ce9fa6;
+  border-radius: 5px 5px 100px 100px;
+  background: #e77d8b;
+  left: 68px;
+  margin-top: 27px;
+}
+
+@keyframes eyemovel {
+  to {
+    transform: rotate(-10deg);
+  }
+}
+
+@keyframes eyemover {
+  to {
+    transform: rotate(10deg);
+  }
+}
